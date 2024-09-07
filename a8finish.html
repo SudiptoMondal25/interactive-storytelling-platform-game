@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline-8</title>
+    <link rel="stylesheet" href="a8finish.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="airlines scene-8.jpg"
+        alt=""
+        class="centered-image"
+        width="60%"
+      />
+
+      <p><span class="auto-type"></span></p>
+
+      <button class="btn1" id="button1" onclick="goToNextPage(this)">
+        Click Here to return to the Homepage
+      </button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      typed = new Typed(".auto-type", {
+        strings: [
+          " Mark lands at his destination airport, having <br> successfully navigated the challenges and <br> arrived  within budget.<br><br> <h1 >!!!Game Over!!! </h1> ",
+        ],
+        typeSpeed: 60,
+      });
+
+      function goToNextPage(button) {
+        var buttonId = button.id;
+        if (buttonId === "button1") {
+          window.location.href = "index.html";
+        }
+      }
+    </script>
+  </body>
+</html>

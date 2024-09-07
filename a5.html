@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline-5</title>
+    <link rel="stylesheet" href="a5.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="airlines scene-5.jpg" alt="" class="centered-image" />
+
+      <p><span class="auto-type"></span></p>
+      <button class="btn1" id="button1" onclick="goToNextPage(this)">
+        Maintain a composed demeanor arrangements 
+      </button>
+      <button class="btn2" id="button2" onclick="goToNextPage(this)">
+        Express frustration and demand compensation
+      </button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      typed = new Typed(".auto-type", {
+        strings: [
+          " Mark's journey progresses, and he encounters unexpected <br> situations that require him to make choices.",
+        ],
+        typeSpeed: 60,
+      });
+
+      function goToNextPage(button) {
+        var buttonId = button.id;
+        if (buttonId === "button1") {
+          window.location.href = "a6.html";
+        } else if (buttonId === "button2") {
+          window.location.href = "thinking.html";
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline-6</title>
+    <link rel="stylesheet" href="a6.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="airlines scene-6.jpg"
+        alt=""
+        class="centered-image"
+        width="65%"
+      />
+
+      <p><span class="auto-type"></span></p>
+      <button class="btn1" id="button1" onclick="goToNextPage(this)">
+        Stay calm and trust the pilot to navigate through the
+        turbulence arrangements 
+      </button>
+      <button class="btn2" id="button2" onclick="goToNextPage(this)">
+        Panic and request to change the flight, incurring additional costs
+      </button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      typed = new Typed(".auto-type", {
+        strings: [
+          " Mark encounters unexpected turbulence during the flight,<br> adding a new layer of uncertainty to his journey.",
+        ],
+        typeSpeed: 60,
+      });
+
+      function goToNextPage(button) {
+        var buttonId = button.id;
+        if (buttonId === "button1") {
+          window.location.href = "a7.html";
+        } else if (buttonId === "button2") {
+          window.location.href = "request.html";
+        }
+      }
+    </script>
+  </body>
+</html>

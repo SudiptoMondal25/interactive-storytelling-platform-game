@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline-10</title>
+    <link rel="stylesheet" href="airline10.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="Airline10.jpg" alt="" class="centered-image" width="70%" />
+
+      <p><span class="auto-type"></span></p>
+      <button class="btn1" id="button1" onclick="goToNextPage(this)">
+        Click Here to return to the Homepage
+      </button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      typed = new Typed(".auto-type", {
+        strings: [
+          " As Mark has made several wrong decisions throughout his journey,<br> he lands at his destination but realizes that he doesn't have enough money to pay for transportation to his final destination from the airport.<br> Consequently, he lost the game.<br><br> <h1 >!!!Game Over!!! </h1>",
+        ],
+        typeSpeed: 60,
+      });
+
+      function goToNextPage(button) {
+        var buttonId = button.id;
+        if (buttonId === "button1") {
+          window.location.href = "index.html";
+        }
+      }
+    </script>
+  </body>
+</html>

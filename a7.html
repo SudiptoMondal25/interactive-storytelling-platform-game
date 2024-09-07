@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airline-7</title>
+    <link rel="stylesheet" href="a7.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img
+        src="airlines scene -7.jpg"
+        alt=""
+        class="centered-image"
+        width="60%"
+      />
+
+      <p><span class="auto-type"></span></p>
+      <button class="btn1" id="button1" onclick="goToNextPage(this)">
+        Report the missing baggage and wait for it to be delivered, incurring
+        some inconvenience arrangements 
+      </button>
+      <button class="btn2" id="button2" onclick="goToNextPage(this)">
+        Choose to purchase essential items immediately, adding to the overall
+        travel expenses
+      </button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      typed = new Typed(".auto-type", {
+        strings: [
+          " Mark's baggage goes missing upon arrival, presenting <br> him with a choice on how to handle the situation.",
+        ],
+        typeSpeed: 60,
+      });
+
+      function goToNextPage(button) {
+        var buttonId = button.id;
+        if (buttonId === "button1") {
+          window.location.href = "a8finish.html";
+        } else if (buttonId === "button2") {
+          window.location.href = "airline10.html";
+        }
+      }
+    </script>
+  </body>
+</html>
