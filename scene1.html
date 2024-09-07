@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Haunted Forest</title>
+    <link rel="stylesheet" href="scene1.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="scene1.jpeg" alt="Group of friends" width="60%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">Enter the forest immediately</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Gather more information before entering </button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: ["Alex and their group of friends gather at the edge of the <br> haunted forest, ready to uncover its mysteries."],
+            typeSpeed: 60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'scene2.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'scene2.html';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

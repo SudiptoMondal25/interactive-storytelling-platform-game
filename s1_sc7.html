@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Forgotten Key</title>
+    <link rel="stylesheet" href="s1_sc1.css">
+</head>
+
+<body>
+    <div class="container"> <img src="story1_images\s1_sc7.jpg" alt="" class="centered-image">
+
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">Explore the basement</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Investigate the attic</button>
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: [" Emma deciphers the clues hidden within the letters and photographs, leading her on an exciting treasure hunt throughout the mansion."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 's1_sc7b1.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 's1_sc8.html';
+            }
+        }
+
+    </script>
+
+</body>
+
+</html>

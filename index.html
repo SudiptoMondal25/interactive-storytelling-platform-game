@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Chrono Nexus</title>
+</head>
+
+<body>
+        <h2 class="contact-heading">Welcome to</h2>
+        <h2 class="contact-heading1"> Chrono Nexus</h2>
+        <div class="project-container"> 
+            <div class="project-type">
+                <div class="img-container">
+                    <img src="./img/TFK.jpg" alt="">
+                    <div class="img-content"> 
+                        <h3>Dive into a thrilling mystery adventure as Emma in "The Forgotten Key," delving into a
+                            mysterious old mansion, unlocking hidden rooms, and making crucial choices that unravel
+                            secrets and determine her fate in this captivating tale of intrigue and discovery.</h3>
+                        <a href="s1_sc1.html" id="page1" class="btn btn-primary" target=_blank
+                            onclick="goToNextPage(this)">Play Now</a>
+                    </div>
+                </div>
+                <h5 class="story">The Forgotten key</h5>
+            </div>
+            <div class="project-type">
+                <div class="img-container">
+                    <img src="./img/story2.jpg" alt="">
+
+                    <div class="img-content">
+                        <h3>Explore the depths of a haunted forest as Alex, making life-or-death choices while facing
+                            spectral encounters, uncovering hidden artifacts, and unraveling chilling secrets in this
+                            spine-tingling supernatural horror game.</h3>
+                        <a href="scene1.html" class="btn btn-primary" id="page2" target=_blank
+                            onclick="goToNextPage(this)">Play Now</a>
+                    </div>
+                </div>
+                <h5 class="story">The Haunted Forest</h5>
+            </div>
+            <div class="project-type">
+                <div class="img-container">
+                    <img src="./img/story3.jpg" alt="">
+                    <div class="img-content">
+                        <h3>Embark on a budget-conscious adventure as a person, making critical choices to navigate
+                            airports, airlines, and unexpected challenges in "Wings of Destiny," a thrilling travel game
+                            where your decisions shape the journey.</h3>
+                        <a href="The_journey.html" id="page3" class="btn btn-primary" target=_blank
+                            onclick="goToNextPage(this)">Play Now</a>
+                    </div>
+                </div>
+                <h5 class="story">Wings of Destiny</h5>
+            </div>
+        </div>
+
+<script>
+    function goToPage(event) {
+        event.preventDefault(); 
+        window.open(this.href, '_blank');
+    }
+
+    const page1 = document.getElementById("page1");
+    const page2 = document.getElementById("page2");
+    const page3 = document.getElementById("page3");
+
+    page1.addEventListener('click', goToPage);
+    page2.addEventListener('click', goToPage);
+    page3.addEventListener('click', goToPage);
+</script>
+
+
+</body>
+
+</html>

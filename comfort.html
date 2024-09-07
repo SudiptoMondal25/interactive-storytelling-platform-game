@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Comfort</title>
+    <link rel="stylesheet" href="comfort.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <img src="comfort.jpg" alt="" class="centered-image" id="img" />
+
+      <p><span class="auto-type"></span></p>
+      <button class="btn1" id="button1" onclick="goToNextPage(this)">
+        Pay the additional fees to continue enjpying added comfort
+      </button>
+      <button class="btn2" id="button2" onclick="goToNextPage(this)">
+        Choose to forego some of the added comfort to save some money
+      </button>
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+      typed = new Typed(".auto-type", {
+        strings: [
+          " Mark's full service airline has unexpected fees and charges",
+        ],
+        typeSpeed: 60,
+      });
+
+      function goToNextPage(button) {
+        var buttonId = button.id;
+        if (buttonId === "button1") {
+          window.location.href = "a2.html";
+        } else if (buttonId === "button2") {
+          window.location.href = "a2.html";
+        }
+      }
+    </script>
+  </body>
+</html>

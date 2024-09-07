@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Request</title>
+    <link rel="stylesheet" href="request.css">
+</head>
+
+<body>
+    <div class="container"> <img src="request.jpg" alt="" class="centered-image" width="70%">
+
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">  Try to calm down and continue with the original
+            flight plan, potentially saving money and avoiding further complications
+            through the turbulence arrangements </button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)"> Pay the additional costs to change the flight
+            and alleviate the anxiety caused by turbulence
+            additional costs</button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: ["Mark panics and requests to change the flight, incurring additional costs."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'a8finish.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'airline10.html';
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

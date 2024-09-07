@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest-2</title>
+    <link rel="stylesheet" href="scene2.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="scene2.jpeg" alt="Group of friends" width="60%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">Take the left path</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Take the right path </button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: [" Alex and the group come across a fork in the forest,<br> forcing them to make a decision."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'scene3.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'story2-scene2.1.html';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
