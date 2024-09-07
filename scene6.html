@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest-6</title>
+    <link rel="stylesheet" href="scene6.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="scene6.jpeg" alt="Group of friends" width="60%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">Take a risky shortcut</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Follow a longer but safer route</button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: [" Alex and the remaining group members make a daring escape <br> from the haunted forest."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'scene7.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'end2.html';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

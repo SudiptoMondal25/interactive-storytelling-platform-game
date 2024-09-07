@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest-4.2</title>
+    <link rel="stylesheet" href="story2-scene4.2.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="story2-scene4.2.jpg" alt="Group of friends" width="60%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)"> Face challenges from those who seek to steal the artifact.</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Find a path for going out from the forest.</button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: ["Alex chooses to safeguard the artifact, but they must find a<br> secure location to prevent its misuse."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'scene5.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'scene6.html';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

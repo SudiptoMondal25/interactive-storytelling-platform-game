@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thinking</title>
+    <link rel="stylesheet" href="thinking.css">
+</head>
+
+<body>
+    <div class="container"> <img src="thinking.jpg" alt="" class="thinking how to deal with it" width="60%">
+
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)"> Continue to insist on compensation
+
+
+            arrangements </button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">  Try to find alternative
+            travel arrangements to reach the destination on time
+
+
+        </button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: [" Mark's journey progresses, and he encounters unexpected <br> situations.Time to take a hard choice"],
+            typeSpeed: 60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'request.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'airline10.html';
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+</body>
+
+</html>

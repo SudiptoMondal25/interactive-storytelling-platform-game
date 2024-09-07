@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&family=Stick+No+Bills:wght@300;400&display=swap');
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    /* padding: 0; */
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+
+}
+
+.btn {
+    padding: 1em 2.5em;
+    text-decoration: none;
+    border-radius: 50px;
+    cursor: pointer;
+    outline: none;
+    margin-top: 1em;
+    margin-left: 80px;
+    margin-bottom: 140px;
+    text-transform: uppercase;
+    font-weight: 500;
+
+
+}
+
+.btn-primary {
+    color: black;
+    background: #fff;
+    margin-bottom: 140px;
+    font-weight: bold;
+    margin: auto;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-image: url("./img/homepage.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*     UTILITY CLASS */
+.container {
+    max-width: 1200px;
+    width: 90%;
+    margin: auto;
+
+}
+
+#project {
+    background-image: url("./img/homepage.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-heading {
+    text-align: center;
+    font-size: 6rem;
+    font-weight: 100;
+    text-transform: uppercase;
+    color: white;
+    margin-top: 10rem;
+    margin-bottom: 2rem;
+}
+
+.contact-heading1 {
+    text-align: center;
+    font-size: 8rem;
+    font-weight: 100;
+    margin-bottom: 10rem;
+    text-transform: uppercase;
+    color: white;
+
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+}
+
+.project-type {
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3rem;
+    margin: 0 20px 0 20px;
+}
+
+.project-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 15rem;
+    flex-wrap: wrap;
+}
+
+.project-container img {
+    display: block;
+    width: 100%;
+    margin: auto;
+    max-height: 300px;
+    object-fit: cover;
+    object-position: center;
+    border: 3px solid wheat;
+}
+
+.img-container {
+    margin: 0 1rem;
+    position: relative;
+}
+
+.img-content {
+    /* button */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+    text-align: center;
+    opacity: 0;
+    transition: all 0.3s ease-in-out 0.1s;
+    opacity: 0; 
+}
+
+.img-content h3 {
+    color: #fff;
+    font-size: 1.1rem;
+    font-weight: normal;
+    text-align: justify;
+    width: 300px;
+    padding-bottom: 30px;
+
+}
+
+.img-content a {
+    font-size: 1.2rem;
+    justify-content: center;
+}
+
+.img-container::after {
+    content: " hiiii";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.871);
+    opacity: 0;
+    z-index: 1;
+    transform: scaleY(0);
+    transform-origin: 100% 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+.img-container:hover::after {
+    opacity: 1;
+    transform: scaleY(1);
+    justify-content: center;
+}
+
+.img-container:hover .img-content {
+    opacity: 1;
+    top: 50%;
+    justify-content: center;
+}
+
+.project-type .story {
+    color: #fff;
+    padding: 20px;
+    padding-left: 95px;
+    font-size: 2.2rem;
+    text-align: center;
+    padding-left: 0;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest-2.1</title>
+    <link rel="stylesheet" href="story2-scene2.1.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="story2-scene2.1.jpg" alt="Group of friends" width="60%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">Approach the mysterious figure</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Remain cautious and stay where you are</button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: ["The glade seems almost otherworldly, a place of calm midst the haunted forest.<br> As the group takes in their surroundings, they notice a mysterious figure standing by the brook."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'story2-scene2.2.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'story2-scene2.3.html';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest-2.2</title>
+    <link rel="stylesheet" href="story2-scene2.2.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="story2-scene2.2.jpg" alt="Group of friends" width="60%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)"> Listen to the guardian's tales and learn valuable insights.</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Request the guardian's help to navigate the forest safely.</button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: [" The group cautiously approaches the figure, who reveals themselves  to be <br> a wise forest guardian. They offer guidance and share stories <br>of the haunted woods."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'scene5.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'scene4.html';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

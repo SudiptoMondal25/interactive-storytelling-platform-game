@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>unexpected</title>
+    <link rel="stylesheet" href="unexpected.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="unexpected.jpg" alt="" width="80%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">Use the artifact's power for personal
+            gain</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Safely store the artifact and keep it away from
+            malevolent forces</button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: ["Alex discovers a hidden artifact in the forest, which presents a dilemma"],
+            typeSpeed: 60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'a5.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'a5.html';
+            }
+        }
+
+
+
+
+
+
+
+
+    </script>
+
+</body>
+
+</html>

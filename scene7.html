@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forest-7</title>
+    <link rel="stylesheet" href="scene7.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <img src="scene7.jpeg" alt="Group of friends" width="60%">
+
+        <p> <span class="auto-type"></span></p>
+        <button class="btn1" id="button1" onclick="goToNextPage(this)">Embrace the lessons learned and grow from the experience</button>
+        <button class="btn2" id="button2" onclick="goToNextPage(this)">Try to forget the haunting memories and move on</button>
+
+
+
+
+
+
+    </div>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+    <script>
+
+        typed = new Typed(".auto-type", {
+            strings: [" Alex and the survivors reflect on their experiences in the haunted <br> forest and contemplate the impact of their choices."],
+            typeSpeed:60,
+
+        })
+
+        function goToNextPage(button) {
+            var buttonId = button.id;
+            if (buttonId === 'button1') {
+                window.location.href = 'end1.html';
+            } else if (buttonId === 'button2') {
+                window.location.href = 'end2.html';
+            }
+        }
+    </script>
+
+</body>
+
+</html>
